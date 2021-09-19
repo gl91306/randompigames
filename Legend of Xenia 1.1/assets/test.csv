@@ -1,0 +1,236 @@
+// TAG,// TEXT,// CHECK SCRIPT,// OPTIONS,// RUN SCRIPT,// TAG DESTINATION
+,,,,,
+!!sB,,,,,
+temple1,"Knowing what's ahead, you kneel down and pray.",,[lime]continue.,,temple2
+temple2,Pray for...,,[red]life.,scr_temple_check,temple3
+,,,[blue]death.,scr_temple_check,temple4
+temple3,Your prayers have been heard by the gods.,,[lime]continue.,scr_maxhp_inc,temple5
+temple4,Your prayers have been heard by the gods.,,[lime]continue.,scr_maxmp_inc,temple6
+temple5,Maximum health points increased!,,[lime]continue.,scr_setspawn,temple7
+temple6,Maximum stamina points increased!,,[lime]continue.,scr_setspawn,temple7
+temple7,Checkpoint set!,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+templeused1,Your prayers have already been heard.,,[lime]continue.,,templeused2
+templeused2,But there may be others willing to listen.,,[lime]continue.,scr_setspawn,templeused3
+templeused3,Checkpoint set!,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+templeusedall1,Every known god has already listened.,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+intro_forestentry0,Warning! Toxic slimes roam the forest ahead.,,[lime]continue.,,intro_forestentry1
+intro_forestentry1,It's dangerous to go alone in there with no weapon.,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+intro_templeentry0,On this mountain lies the Southern Shrine.,,[lime]continue.,,intro_templeentry1
+intro_templeentry1,Please do not disturb the spirits.,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+intro_sword0,A sword is halfway buried in the sand.,,[lime]continue.,,intro_sword1
+intro_sword1,It looks pretty fancy. And very expensive!,,[lime]continue.,,intro_sword2
+intro_sword2,Great for killing enemies and cutting grass!,,[lime]continue.,,intro_sword3
+intro_sword3,You decide to keep it!,,[lime]continue.,scr_hassword,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+town_palace0,Ahead lies the Royal Palace!,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+town_hiddensign0,I'm just a hidden signpost.,,[lime]continue.,,town_hiddensign1
+town_hiddensign1,Nothing weird going on here.,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+town_drunk0,Ughh...,,[lime]continue.,,town_drunk1
+town_drunk1,This morning I was feeling ready for battle.,,[lime]continue.,,town_drunk2
+town_drunk2,So I went to the potion seller.,,[lime]continue.,,town_drunk3
+town_drunk3,And I said: 'potion seller!',,[lime]continue.,,town_drunk4
+town_drunk4, 'I want only your strongest potions!',,[lime]continue.,,town_drunk5
+town_drunk5,But he didn't want to sell any to me!,,[lime]continue.,,town_drunk6
+town_drunk6,He said: 'You can't handle my potions!',,[lime]continue.,,town_drunk7
+town_drunk7,So I asked him again and again!,,[lime]continue.,,town_drunk8
+town_drunk8,"Eventually he gave in, and sold me one.",,[lime]continue.,,town_drunk9
+town_drunk9,That was a mistake.,,[lime]continue.,,town_drunk10
+town_drunk10,I couldn't handle it!,,[lime]continue.,,town_drunk11
+town_drunk11,Urgghhh...,,[lime]continue.,,town_drunk12
+town_drunk12,"Just let me rest for 5 more minutes, k?",,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+traveller_met0,What you saw earlier today...,,[lime]continue.,,traveller_met1
+traveller_met1,Don't ever speak of it to anyone!,,"[red]haha, I will!",,traveller_met2
+,,,"[blue]ok, I won't.",,traveller_met3
+traveller_met2,Little girl! You are a rascal!,,[lime]continue.,,traveller_met4
+traveller_met3,"Good, little girl!",,[lime]continue.,,traveller_met4
+traveller_met4,"And besides, I only had a small drop!",,[lime]continue.,,traveller_met5
+traveller_met5,"If I had taken the entire potion, I'm sure...",,[lime]continue.,,traveller_met6
+traveller_met6,...that I would've been able to handle it!,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+hasmagic0,"Pleasure to meet you, little girl.",,[lime]continue.,,hasmagic1
+hasmagic1,Oh! I sense something very rare within you!,,[lime]continue.,,hasmagic2
+hasmagic2,An ability not many possess. At least...,,[lime]continue.,,hasmagic3
+hasmagic3,...not many outside the royal family.,,[lime]continue.,,hasmagic4
+hasmagic4,"If it wasn't for the fact, that the...",,[lime]continue.,,hasmagic5
+hasmagic5,...princess died not long ago...,,[lime]continue.,,hasmagic6
+hasmagic6,...I would've thought...,,[lime]continue.,,hasmagic7
+hasmagic7,...that you were her!,,[red]ability?,,hasmagic_ability0
+,,,,,
+,,,,,
+hasmagic_ability0,Yes. I can feel it in your aura.,,[lime]continue.,,hasmagic_ability1
+hasmagic_ability1,There's powerful magic inside of you!,,[lime]continue.,,hasmagic_ability2
+hasmagic_ability2,"All it takes is knowing a spell, and you...",,[lime]continue.,,hasmagic_ability3
+hasmagic_ability3,...should be able to cast it easily!,,[red]cool!,,hasmagic_ability_cool0
+,,,[blue]boring...,,hasmagic_ability_boring0
+,,,,,
+hasmagic_ability_cool0,"Here, I will teach you a magic spell.",,[lime]continue.,,hasmagic_ability_cool1
+hasmagic_ability_cool1,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,,hasmagic_ability_cool2
+hasmagic_ability_cool2,"Ah, there!",,[lime]continue.,scr_hasmagic,hasmagic_ability_cool3
+hasmagic_ability_cool3,You will now be able to cast fireballs!,,[lime]continue.,,hasmagic_ability_cool4
+hasmagic_ability_cool4,That should come in handy.,,[lime]continue.,scr_screenshake_start,palace_destroy0
+,,,,,
+,,,,,
+hasmagic_ability_boring0,"Hey now! Don't be so rude, girl!",,[lime]continue.,,hasmagic_ability_boring1
+hasmagic_ability_boring1,Magic is a rare skill only few possess.,,[lime]continue.,,hasmagic_ability_boring2
+hasmagic_ability_boring2,"Here, I will teach you a magic spell.",,[lime]continue.,,hasmagic_ability_boring3
+hasmagic_ability_boring3,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,,hasmagic_ability_boring4
+hasmagic_ability_boring4,"Ah, there!",,[lime]continue.,scr_hasmagic,hasmagic_ability_boring5
+hasmagic_ability_boring5,You will now be able to cast fireballs!,,[lime]continue.,,hasmagic_ability_boring6
+hasmagic_ability_boring6,That should come in handy.,,[lime]continue.,scr_screenshake_start,palace_destroy0
+,,,,,
+,,,,,
+palace_destroy0,"[!delay,30]...Wow!",,[lime]continue.,,palace_destroy1
+palace_destroy1,The ground is shaking like crazy!,,[lime]continue.,,palace_destroy2
+palace_destroy2,"Hold onto your butt, girl!",,[lime]continue.,,palace_destroy3
+palace_destroy3,What could be happening?,,[lime]continue.,,palace_destroy4
+palace_destroy4,"Hold on, let me look out the window...",,[lime]continue.,,palace_destroy5
+palace_destroy5,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,scr_screenshake_stop,palace_destroy6
+palace_destroy6,Oh no!!!,,[lime]continue.,,palace_destroy7
+palace_destroy7,The royal palace!,,[lime]continue.,,palace_destroy8
+palace_destroy8,"It's completely gone, and a pool of water...",,[lime]continue.,,palace_destroy9
+palace_destroy9,...has appeared in it's place!,,[lime]continue.,,palace_destroy10
+palace_destroy10,Did the palace just randomly sink?,,[lime]continue.,,palace_destroy11
+palace_destroy11,This is not good!,,[lime]continue.,,palace_destroy12
+palace_destroy12,"I'm just an old man, but you're young and strong!",,[lime]continue.,,palace_destroy13
+palace_destroy13,Hurry out and see what's going on!,,[lime]continue.,scr_palacedestroyed,
+,,,,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+hasmagic_palacedestroyed0,I hope everyone at the palace is ok!,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+key0,A key is lying on the ground.,,[lime]continue.,,key1
+key1,"It looks like it fits in some old, rustic gate.",,[lime]continue.,,key2
+key2,Might be useful!,,[lime]continue.,,key3
+key3,You decide to pick it up.,,[lime]continue.,scr_get_key,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+gate_haskey0,A gate's blocking the way.,,[red]use key.,,gate_haskey_open0
+,,,[blue]leave.,,gate_haskey_leave0
+,,,,,
+gate_haskey_open0,You pull out the key and try your luck.,,[lime]continue.,,gate_haskey_open1
+gate_haskey_open1,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,,gate_haskey_open2
+gate_haskey_open2,You hear a faint 'click' as the gate opens.,,[lime]continue.,scr_remove_key,
+,,,,,
+,,,,,
+gate_haskey_leave0,Maybe next time.,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+gate_nokey0,A gate's blocking the way.,,[lime]continue.,,gate_nokey1
+gate_nokey1,If only you had a matching key...,,[lime]continue.,,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+pausemenu0,#,,Change camera#,,camera0
+,,,Window size#,,window0
+,,,Main menu#,,mainmenu0
+,,,Back to game,,
+,,,,,
+camera0,#,,Fixed,scr_cam_fixed,camera0
+,,,Smooth,scr_cam_smooth,camera0
+,,,Classic grid#,scr_cam_grid,camera0
+,,,Back,,pausemenu0
+,,,,,
+window0,#,,1x - 64x64,scr_res_1,window0
+,,,2x - 128x128,scr_res_2,window0
+,,,4x - 256x256,scr_res_4,window0
+,,,8x - 512x512,scr_res_8,window0
+,,,16x - 1024x1024#,scr_res_16,window0
+,,,Fullscreen#,scr_fullscreen,window0
+,,,Back,,pausemenu0
+,,,,,
+mainmenu0,#Are you sure that you want to go to the main menu?#[red]Progress will be lost![/c]#,,No.,,pausemenu0
+,,,Yes.,scr_mainmenu,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+boss0,Wait.. Xenia?,,[lime]continue.,,boss1
+boss1,My princess daughter Xenia?,,[lime]continue.,,boss2
+boss2,Is it really you?,,[red]Yeah!,,boss3
+boss3,But... You died at sea!,,"[red]Nah, mom.",,boss4
+boss4,"You and your father, the king!",,[red]Let me explain.,,boss5
+boss5,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,,boss6
+boss6,So you're saying that you survived?,,[lime]continue.,,boss7
+boss7,You only just woke up at the beach?,,[lime]continue.,,boss8
+boss8,Talk about luck!,,[lime]continue.,,boss9
+boss9,Or maybe your magic kept you alive!,,[lime]continue.,,boss10
+boss10,".[!delay,30].[!delay,30].[!delay,30].[!delay,30].[!delay,30].",,[lime]continue.,scr_bossengage,boss11
+boss11,[red]Bwahahaha![/c],,[lime]oh shit!,,boss12
+boss12,[red]I am the legendary Skullsquid![/c],,[lime]continue.,,boss13
+boss13,[red]It was me who wrecked your ship![/c],,[lime]continue.,,boss14
+boss14,[red]I can't stand your magic auras![/c],,[lime]continue.,,boss15
+boss15,[red]They drive me insane![/c],,[lime]continue.,,boss16
+boss16,[red]So I'll kill you all![/c],,[lime]never!,scr_bossstart,
+!!eB,,,,,
+,,,,,
+,,,,,
+!!sB,,,,,
+end0,You slayed the skullsquid! Yay!,,[lime]continue.,,end1
+end1,So we are finally reunited...,,[lime]continue.,,end2
+end2,Queen and Princess.,,[lime]continue.,,end3
+end3,Mother and daughter.,,[lime]continue.,,end4
+end4,How the heck did you do that?,,[lime]continue.,,end5
+end5,You gotta tell me some day!,,[lime]continue.,,end6
+end6,And tell me all about what happened...,,[lime]continue.,,end7
+end7,...on the ship!,,[lime]continue.,,end8
+end8,Tell me 'the legend of xenia'!,,[lime]continue.,,end9
+end9,About skullsquid's attack!,,[lime]continue.,,end10
+end10,About how you managed to survive!,,[lime]continue.,,end11
+end11,...and about how...,,[lime]continue.,,end12
+end12,...your father...,,[lime]continue.,,end13
+end13,...wait!!,,[lime]continue.,,end14
+end14,If you managed to survive and...,,[lime]continue.,,end15
+end15,...get back to this island...,,[lime]continue.,,end16
+end16,...then surely your father could've too!,,[lime]continue.,,end17
+end17,We have to believe!,,[lime]continue.,,end18
+end18,"Let's go find your father, Xenia!",,[lime]continue.,,end19
+end19,"(and that's the end, folks!)",,[red]main menu.,scr_mainmenu,
+!!eB,,,,,
